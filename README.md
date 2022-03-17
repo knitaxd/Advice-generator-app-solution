@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://knitaxd.github.io/]
+- Live Site URL: [https://knitaxd.github.io/]
 
 ## My process
   I wrote mobile first and then use media queries for responsive web desing. For the JS i use fetch to extract the API
