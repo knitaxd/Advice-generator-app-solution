@@ -1,83 +1,139 @@
-@media (max-width: 375px){
-    body{
-        font-family: 'Manrope', sans-serif;
-        background-color: hsl(218, 23%, 16%);
-        display: flex;
-        height: 100vh;
-        width: 100%;
-        flex-flow: column wrap;
-        align-items: center;
-        justify-content: center;
-    }
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 90%;
+    height: 50%;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+}
+
+.box__element--id{
+    height: 15%;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: hsl(150, 100%, 66%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.box__element--text{
+    height: 60%;
+    color: hsl(193, 38%, 86%);
+    text-align: center;
+    font-size: 28px;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 10%;
+}
+
+.box__element--last{
+    height: 25%;
+}
+
+
+#box__element--button{
+    width: 70px;
+    height: 70px;
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    position: sticky;
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box__element--button img{
+    width: 40%;
+    height: 40%;
+
+}
+
+#box__element--dividerM{
+    display: block;
+    margin: auto;
+    position: relative;
+    width: auto;
+    height: auto;
+    bottom: -1%;
+}
+
+#box__element--dividerD{
+    display: none;
+}
+
+.attribution{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (min-width:600px){
     .box{
-        width: 90%;
-        height: 55%;
-        background-color: hsl(217, 19%, 24%);
-        border-radius: 3%;
-        box-sizing: border-box;
-        display: flex;
-        flex-flow: column;
+        width: 70%;
+        height: 35%;
     }
 
-    .box__element--id, .box__element--last{
-        height: 20%;
+    #box__element--dividerM{
+        bottom: 30%;
     }
 
-    .box__element--text{
-        height: 60%;
-    }
-
-    .box__element--text{
-        color: hsl(193, 38%, 86%);
-        text-align: center;
-        font-size: 28px;
-        padding: 0.1rem;
-        width: 80%;
-        height: auto;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-
-    .box__element--id{
-        font-size: 14px;
-        letter-spacing: 4px;
-        color: hsl(150, 100%, 66%);
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
+    #box__element--dividerD{
+        display: none;
     }
 
     #box__element--button{
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         background-color: hsl(150, 100%, 66%);
         border-radius: 50%;
         margin: auto;
-        margin-top: 5%;
+        margin-top: 8%;
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
     }
 
-    #box__element--button img{
+    #box__element--button:hover{
+        box-shadow: 0 5px 20px hsl(150, 100%, 66%);
+    }
+}
+
+
+@media screen and (min-width:900px){
+    .box{
         width: 40%;
-        height: 40%;
-
+        height: 35%;
     }
 
-    #box__element--divider{
+    #box__element--dividerD{
         display: block;
         margin: auto;
         position: relative;
-        bottom: 10%;
+        bottom: 25%;
     }
 
-    .attribution{
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+    #box__element--dividerM{
+        display: none;
     }
 }
+
