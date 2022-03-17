@@ -58,6 +58,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#box__element--button:hover{
+box-shadow: 0 5px 20px hsl(150, 100%, 66%);
 }
 
 #box__element--button img{
@@ -109,12 +115,6 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-    }
-
-    #box__element--button:hover{
-        box-shadow: 0 5px 20px hsl(150, 100%, 66%);
     }
 }
 
